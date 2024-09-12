@@ -27,58 +27,34 @@
     </div>
 
     <main>
-        <section>
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" style="color: white;" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" style="color: white;" class="form-text">Nunca compartiremos tu Email sin tu consentimiento.</div>
-                </div>
-                <div>
-                    <label for="exampleInputEmail1" style="color: white;" class="form-label">Nombre y Apellido</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div>
-                    <label for="exampleInputEmail1" style="color: white;" class="form-label">Edad</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" style="color: white;" class="form-label">Comentario</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Dejanos tu comentario">
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" style="color: white;" for="exampleCheck1">Recuerdame</label>
-                </div>
-                <button type="submit" class="btn colorboton">Enviar</button>
-              </form>
+        <section class="contacto py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contáctanos</h2>
+                <p class="text-center mb-4">Si tienes alguna pregunta o deseas más información, no dudes en ponerte en contacto con nosotros. Rellena el formulario a continuación y te responderemos lo antes posible.</p>
+                <form class="formulario-contacto row g-3" action="/enviar-formulario" method="post">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required aria-required="true" aria-describedby="nombreHelp">
+                        <small id="nombreHelp" style="color:white;" class="form-text text-muted">Introduce tu nombre completo.</small>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control" required aria-required="true" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Introduce una dirección de correo válida.</small>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required aria-required="true" aria-describedby="mensajeHelp"></textarea>
+                        <small id="mensajeHelp" class="form-text text-muted">Escribe tu mensaje aquí.</small>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-light">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
-        <!--<section>
-            <h2 class="colorcontacto">Contacto</h2>
-            <form action="" method="get" enctype="text/plain">
-                <legend class="colorcontacto">Datos Personales</legend>
-                <fieldset>  
-                    <label class="colorcontacto" for="nombreapellido">Nombre Y Apellido</label>
-                    <input type="text" name="nombreapellido" id="nombreapellido" placeholder="Nombre y Apellido" required> <br>
-                </fieldset>
-                <Fieldset>
-                    <label class="colorcontacto" for="mail">Email</label>
-                    <input type="email" name="mail" id="mail" placeholder="Email" required> <br>
-                </Fieldset>
-                <fieldset>
-                    <label class="colorcontacto" for="contrasena">Contrasena</label>
-                    <input type="password"name="contrasena" id="contrasena" placeholder="Contrasena" required> <br>
-                </fieldset>
-                <div class="colorcontacto">Hombre</div>
-                <input type="radio" name="Genero" id="genero" value="Hombre">
-                <div class="colorcontacto">Mujer</div>
-                <input type="radio" name="Genero" id="Genero" value="Mujer">
-                <div class="colorcontacto">Otro</div>
-                <input type="radio" name="Genero" id="Genero" value="Otro"> <br>
-                <textarea name="comentario" id="comentario" placeholder="Dejanos tu comentario"></textarea> <br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>-->
     </main>
+    
 
     <footer class="navbarfooter">
         <div class="divfooter">

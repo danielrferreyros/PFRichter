@@ -1,154 +1,227 @@
-.titulo{
-    color: aliceblue;
-    font-style: oblique;
+body {
+  background-color: rgb(19, 18, 18);
+  font-style: normal;
+  font-size: 1.3rem;
 }
 
-.navbar{
-    background-color:rgb(168, 38, 38);
-    position: relative;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
+.titulo {
+  color: aliceblue;
+  font-style: oblique;
 }
 
-.navbar ul{
-    display: flex;
-    gap: 20px;
+.colortexto, .colorcontacto {
+  color: white;
 }
 
-.navbar li{
-    list-style: none;
+.textohome {
+  color: white;
+  width: 300px;
+  height: auto;
+  font-size: 27px;
 }
 
-.navbar a{
-    text-decoration: none;
-    color: white;
+.h1home {
+  color: antiquewhite;
+  font-size: 45px;
 }
 
-.colortexto{
-    color: white;
+.imagenhome {
+  width: 850px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid;
+  float: right;
 }
 
-body{
-    background-color: rgb(19, 18, 18);
-    font-style: normal;
-    font-size: 1.3rem;
+.container {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
 }
 
-.colorcontacto{
-    color: white;
+.colorboton {
+  color: white;
+  background-color: rgb(168, 38, 38);
 }
 
-.textohome{
-    color: white;
-    width: 300px;
-    height: auto;
-    font-size: 27px;
+.navbar {
+  background-color: rgb(168, 38, 38);
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
 }
 
-.imagenhome{
-    width: 850px;
-    margin: 10px;
-    padding: 10px;
-    border: 10px;
-    float: right;
+.navbarfooter {
+  background-color: rgb(168, 38, 38);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.h1home{
-    color: antiquewhite;
-    font-size: 45px;
+.divfooter p {
+  color: white;
+  display: inline;
+  margin: 50px 20px 20px 20px;
+  padding: 20px;
+  border: 2px solid;
+  list-style: none;
+}
+.divfooter a {
+  text-decoration: none;
+  color: white;
+  border-width: 3px;
 }
 
-.navbarfooter{
-    background-color: rgb(168, 38, 38);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content:space-around;
+.spotify div {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 30px;
+  left: 5px;
+  right: 5px;
+  bottom: 30px;
+  display: inline;
 }
 
-.divfooter p{
-    color: white;
-    display: inline;
-    margin: 50px 20px 20px 20px;
-    padding: 20px;
-    border: 20px;
-    list-style: none;
+.albumes h1 {
+  font-size: 50px;
+  color: antiquewhite;
+}
+.albumes p {
+  color: white;
 }
 
-.divfooter a{
-    text-decoration: none;
-    color: white;
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
+.imgtour {
+  display: flex;
+  width: 1130px;
+  height: 500px;
+  align-items: center;
+  margin: 0 80px;
+  position: relative;
 }
 
+.giras {
+  text-align: center;
+}
+.giras li {
+  position: relative;
+  display: block;
+  margin-bottom: -1px;
+  width: 33.3333%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.giras ul {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.giras a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(168, 38, 38);
+  display: inline-block;
+  text-align: center;
+  padding: 0.375rem 0.75rem;
+  border: 2px solid rgb(168, 38, 38);
+  border-radius: 0.75rem;
+}
 
-.spotify div{
-    margin-bottom: 10px;
-    padding-bottom:10px ;
-    position: relative;
-    top: 30px;
-    left: 5px;
-    right: 5px;
-    bottom: 30px;
-    display: inline;
+.contacto {
+  background-color: rgb(19, 18, 18);
+  color: white;
+  padding: 60px 0;
+  width: 100vw;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.albumes h1{
-    font-size: 50px;
-    color: antiquewhite;
+.contacto .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.albumes p{
-    color: white;
+.contacto .container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.imgtour{
-    display: flex;
-    width: 1130px;
-    height: 500px;
-    align-items: center;
-    margin: 0px 80px 0px 80px;
-    position: relative;
+.contacto .container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  text-align: center;
 }
-.giras{
-    text-align: center;
+.contacto .container .formulario-contacto {
+  background-color: rgb(168, 38, 38);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.giras li{
-    position: relative;
-    display: block;
-    margin-bottom: -1px;
-    width: 33.333333%;
-    color: white;
-    font-size: 20px;
-    text-align: center
+.contacto .container .formulario-contacto .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.giras ul{
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
+.contacto .container .formulario-contacto .row .col-md-6 {
+  flex: 1;
+  min-width: 0;
 }
-.giras a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    background-color: rgb(168, 38, 38);
-    display: inline-block;
-    text-align: center;
-    padding: .375rem .75rem;
-    border-style: solid;
-    border-color: rgb(168, 38, 38);
-    border-radius: 0.75rem;
+.contacto .container .formulario-contacto .form-control {
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
 }
-.container{
-    display: flex;
-    margin: 20px;
-    gap: 20px;
+.contacto .container .formulario-contacto .form-control:focus {
+  border-color: white;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
-.colorboton{
-    color: white;
-    background-color: rgb(168, 38, 38);
+.contacto .container .formulario-contacto .btn-light {
+  background-color: white;
+  color: rgb(168, 38, 38);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+.contacto .container .formulario-contacto .btn-light:hover {
+  background-color: #7e1d1d;
+  transform: scale(1.05);
+}
+.contacto .container .formulario-contacto small {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
