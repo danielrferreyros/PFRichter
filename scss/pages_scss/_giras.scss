@@ -1,0 +1,40 @@
+.imgtour {
+    display: flex;
+    width: 1130px;
+    height: 500px;
+    align-items: center;
+    margin: 0 80px;
+    position: relative;
+}
+
+.giras {
+    text-align: center;
+
+    li {
+        position: relative;
+        display: block;
+        margin-bottom: -1px;
+        width: 33.3333%;
+        color: $color-texto;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    ul {
+        margin: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-texto;
+        font-size: 20px;
+        background-color: $color-principal;
+        display: inline-block;
+        text-align: center;
+        padding: .375rem .75rem;
+        border: $border-width solid $color-principal;
+        border-radius: 0.75rem;
+    }
+}

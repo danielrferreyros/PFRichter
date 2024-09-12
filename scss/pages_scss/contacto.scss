@@ -1,0 +1,88 @@
+.contacto {
+    background-color: $color-fondo;
+    color: $color-texto;
+    padding: $padding-vertical 0; // Espacio vertical
+    width: 100vw; // Ocupa todo el ancho de la ventana
+    margin: 0; // Elimina márgenes externos
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra para darle profundidad
+
+    // Contenedor interno centrado
+    .container {
+        max-width: $max-width-container; // Ancho máximo del contenedor
+        margin: 0 auto; // Centra el contenedor
+        padding: 0 $padding-horizontal; // Espaciado horizontal
+        width: 100%; // Asegura que el contenedor ocupe todo el ancho disponible
+        box-sizing: border-box; // Incluye padding y border en el ancho total
+
+        h2 {
+            font-size: 2.5rem; // Tamaño de fuente del título
+            margin-bottom: 20px; // Espaciado debajo del título
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem; // Tamaño de fuente del párrafo
+            line-height: 1.6; // Altura de línea para mejor lectura
+            margin-bottom: 40px; // Espaciado debajo del párrafo
+            text-align: center;
+        }
+
+        .formulario-contacto {
+            background-color: $color-principal; // Fondo oscuro para el formulario
+            border-radius: $border-radius;
+            padding: $padding-form; // Padding interno del formulario
+            display: flex;
+            flex-direction: column;
+            gap: $gap-form; // Espaciado entre los elementos del formulario
+            width: 100%; // Asegura que el formulario ocupe todo el ancho disponible
+            box-sizing: border-box; // Incluye padding y border en el ancho total
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: $gap-form; // Espaciado entre columnas
+
+                .col-md-6 {
+                    flex: 1;
+                    min-width: 0;
+                }
+            }
+
+            .form-control {
+                border: 1px solid $color-texto;
+                border-radius: $border-radius;
+                background-color: #333; // Fondo oscuro para los campos de entrada
+                color: $color-texto;
+                font-size: 1rem;
+                padding: 15px;
+                margin-bottom: 15px; // Espaciado debajo de cada campo
+                transition: border-color 0.3s ease;
+
+                &:focus {
+                    border-color: $color-boton;
+                    outline: none;
+                    box-shadow: 0 0 0 0.2rem rgba($color-boton, 0.25);
+                }
+            }
+
+            .btn-light {
+                background-color: $color-boton;
+                color: $color-principal;
+                border: none;
+                padding: 15px 30px;
+                border-radius: $border-radius;
+                font-size: 1.1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: $color-boton-hover;
+                    transform: scale(1.05);
+                }
+            }
+            small {
+                color: $color-texto;
+            }
+        }
+    }
+}

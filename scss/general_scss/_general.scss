@@ -1,0 +1,99 @@
+//body
+body {
+    background-color: $color-fondo;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.titulo {
+    color: aliceblue;
+    font-style: oblique;
+}
+
+.colortexto, .colorcontacto {
+    color: $color-texto;
+}
+
+.textohome {
+    color: $color-texto;
+    width: 300px;
+    height: auto;
+    font-size: 27px;
+}
+
+.h1home {
+    color: $color-texto-secundario;
+    font-size: 45px;
+}
+
+.imagenhome {
+    width: 850px;
+    margin: 10px;
+    padding: 10px;
+    border: $border-width solid; // Ajuste el estilo del borde
+    float: right;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+.colorboton {
+    color: $color-texto;
+    background-color: $color-principal;
+}
+
+// Navbar
+.navbar {
+    background-color: $color-principal;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-texto;
+    }
+}
+
+// Footer
+.navbarfooter {
+    background-color: $color-principal;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.divfooter {
+    p {
+        color: $color-texto;
+        display: inline;
+        margin: 50px 20px 20px 20px;
+        padding: 20px;
+        border: $border-width solid; // Ajuste el estilo del borde
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-texto;
+        border-width: 3px;
+    }
+}
