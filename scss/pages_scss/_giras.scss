@@ -1,11 +1,12 @@
 .imgtour {
     display: flex;
-    width: 90%;
-    height: 500px;
+    //width: 90%;
+    //height: 500px;
     align-items: center;
     margin: 0 5%;
     position: relative;
     z-index: -1;
+    @include sizes(90%, 500px)
 }
 
 .giras {

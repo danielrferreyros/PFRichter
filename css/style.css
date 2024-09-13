@@ -115,12 +115,12 @@ body {
 
 .imgtour {
   display: flex;
-  width: 90%;
-  height: 500px;
   align-items: center;
   margin: 0 5%;
   position: relative;
   z-index: -1;
+  width: 90%;
+  height: 500px;
 }
 
 .giras {

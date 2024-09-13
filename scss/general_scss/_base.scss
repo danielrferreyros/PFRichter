@@ -1,3 +1,4 @@
+//variables
 $color-principal: rgb(168, 38, 38);
 $color-fondo: rgb(19, 18, 18);
 $color-texto: white;
@@ -12,3 +13,10 @@ $padding-horizontal: 20px;
 $max-width-container: 1200px;
 $gap-form: 20px;
 $padding-form: 20px;
+
+
+//mixin
+@mixin sizes($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
