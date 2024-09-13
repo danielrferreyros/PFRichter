@@ -2,6 +2,11 @@ body {
   background-color: rgb(19, 18, 18);
   font-style: normal;
   font-size: 1.3rem;
+  margin: 0;
+}
+
+.barranav {
+  background-color: rgb(168, 38, 38);
 }
 
 .titulo {
@@ -26,8 +31,8 @@ body {
 }
 
 .imagenhome {
-  width: 1200px;
-  margin: 10px;
+  width: 90%;
+  margin: 5px;
   padding: 10px;
   border: 2px solid;
   float: right;
@@ -80,7 +85,6 @@ body {
   display: inline;
   margin: 50px 20px 20px 20px;
   padding: 20px;
-  border: 2px solid;
   list-style: none;
 }
 .divfooter a {
@@ -98,6 +102,7 @@ body {
   right: 5px;
   bottom: 30px;
   display: inline;
+  z-index: -1;
 }
 
 .albumes h1 {
@@ -110,11 +115,12 @@ body {
 
 .imgtour {
   display: flex;
-  width: 1130px;
+  width: 90%;
   height: 500px;
   align-items: center;
-  margin: 0 80px;
+  margin: 0 5%;
   position: relative;
+  z-index: -1;
 }
 
 .giras {
@@ -222,6 +228,21 @@ body {
 }
 .contacto .container .formulario-contacto small {
   color: white;
+}
+
+.imggaleria {
+  max-width: 100%;
+  width: 90%;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid;
+  z-index: -1;
+}
+
+.tamanoimg {
+  width: 90%;
+  height: 50%;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */

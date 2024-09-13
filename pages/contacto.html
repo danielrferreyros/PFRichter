@@ -10,19 +10,34 @@
 </head>
 <body>
     <div>
-        <header class="navbar">
-    
-            <h1 class="titulo">Rafaell Cocoa</h1>
-    
-            <nav class="navvar">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./giras.html">Giras</a></li>
-                    <li><a href="./discografia.html">Discografia</a></li>
-                    <li><a href="./galeria.html">Galeria</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <header class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1 class="titulo">Rafaell Cocoa</h1>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <nav class="collapse navbar-collapse barranav" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link barranav" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barranav" href="./giras.html">Giras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barranav" href="./discografia.html">Discografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barranav" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barranav" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     </div>
 
@@ -35,7 +50,7 @@
                     <div class="col-md-6">
                         <label for="nombre" class="form-label">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" class="form-control" required aria-required="true" aria-describedby="nombreHelp">
-                        <small id="nombreHelp" style="color:white;" class="form-text text-muted">Introduce tu nombre completo.</small>
+                        <small id="nombreHelp" class="form-text text-muted">Introduce tu nombre completo.</small>
                     </div>
                     <div class="col-md-6">
                         <label for="email" class="form-label">Correo Electrónico:</label>
