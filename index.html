@@ -10,12 +10,14 @@
 </head>
 <body>
     <div>
-    <header class="navbar">
+    <header class="navbar navbar-expand-lg">
 
         <h1 class="titulo">Rafaell Cocoa</h1>
-
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <nav class="navvar">
-            <ul>
+            <ul class="navbar-nav ms-auto">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/giras.html">Giras</a></li>
                 <li><a href="./pages/discografia.html">Discografia</a></li>
@@ -26,17 +28,42 @@
     </div>
     </header>
 
-    <section>
-    <div class="imagenhome">
-    <img src="./assets/Rafaell cocoa home.jpg" alt="imagen de kidd keo" style="width: 850px; height: 700px;">
-    </div>
-    <div>
-        <h1 class="h1home">Rafaell Cocoa</h1>
-        <p class="textohome">Es un artista peruano del genero urbano de Lima, Perú, miembro de "Panik Room" grupo de artistas peruanos. El 29 de diciembre de 2017 lanzó su primer sencillo "Es Tarde", sin embargo, su carrera despego con el lanzamiento de su album "Cambio de planes" en noviembre del 2022.</p>
-    </div>
+    <section class="container mt-4">
+        <div class="row">
+            <!-- Columna del texto (6 columnas en pantallas medianas o grandes) -->
+            <div class="col-md-6">
+                <h1 class="h1home">Rafaell Cocoa</h1>
+                <p class="textohome">
+                    Es un artista peruano del género urbano de Lima, Perú, miembro de "Panik Room", grupo de artistas peruanos.
+                    El 29 de diciembre de 2017 lanzó su primer sencillo "Es Tarde", sin embargo, su carrera despegó con el
+                    lanzamiento de su álbum "Cambio de planes" en noviembre del 2022.
+                </p>
+            </div>
+            
+            <!-- Columna de la imagen (6 columnas en pantallas medianas o grandes) -->
+            <div class="col-md-6 d-flex justify-content-end">
+                    <div class="imagenhome">
+                        <img src="./assets/Rafaell cocoa home.jpg" alt="imagen de kidd keo" class="img-fluid" style="width: 1200px; height: 700px;">
+                    </div>  
+            </div>
+        </div>
     </section>
 
-    <footer class="navbarfooter">
+    <!--<section class="container mt-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="imagenhome">
+                    <img src="./assets/Rafaell cocoa home.jpg" alt="imagen de kidd keo" class="img-fluid" style="width: 850px; height: 700px;">
+                </div>
+                <div>
+                    <h1 class="h1home">Rafaell Cocoa</h1>
+                    <p class="textohome">Es un artista peruano del genero urbano de Lima, Perú, miembro de "Panik Room" grupo de artistas peruanos. El 29 de diciembre de 2017 lanzó su primer sencillo "Es Tarde", sin embargo, su carrera despego con el lanzamiento de su album "Cambio de planes" en noviembre del 2022.</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <footer class="navbarfooter text-center py-2">
         <div class="divfooter">
         <br>
         <p>Pagina hecha sin fines de lucro</p>
