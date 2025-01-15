@@ -1,13 +1,15 @@
 .imggaleria{
-    max-width: 100%;
-    width: 90%;
     margin: 5px;
     padding: 10px;
     border: $border-width solid;
     z-index: -1;
 }
 .tamanoimg{
-    width: 90%;
-    height: 50%;
     z-index: -1;
+}
+.imagenes{
+    z-index: 1;
+}
+.carousel-control-next{
+    z-index: 1;
 }
