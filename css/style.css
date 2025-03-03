@@ -105,7 +105,7 @@ body {
   z-index: -1;
 }
 
-.albumes h1 {
+.albumes h2 {
   font-size: 50px;
   color: antiquewhite;
 }
@@ -116,7 +116,7 @@ body {
 .imgtour {
   display: flex;
   align-items: center;
-  margin: 0 5%;
+  margin: 10px 5%;
   position: relative;
   z-index: -1;
   width: 90%;
@@ -245,4 +245,26 @@ body {
   z-index: -1;
 }
 
-/*# sourceMappingURL=style.css.map */
+.h2giras {
+  color: antiquewhite;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.bgcolorindex {
+  background-color: rgb(168, 38, 38);
+}
+
+.zindex10 {
+  z-index: 10;
+}
+
+.zindex-1 {
+  z-index: -1;
+}
+
+.hr {
+  border-bottom: 2px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
